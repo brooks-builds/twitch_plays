@@ -1,0 +1,11 @@
+[package]
+name = "twitch_plays"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+enigo = "0.0.14"
+eyre = "0.6.7"
+twitch_chat_wrapper = { path = "../twitch_chat_wrapper" }
