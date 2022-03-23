@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 enigo = "0.0.14"
 eyre = "0.6.7"
-twitch_chat_wrapper = { path = "../twitch_chat_wrapper" }
+twitch_chat_wrapper = "0.2.0"
