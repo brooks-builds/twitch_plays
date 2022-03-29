@@ -620,6 +620,7 @@ dependencies = [
 name = "twitch_plays"
 version = "0.1.0"
 dependencies = [
+ "dotenv",
  "enigo",
  "eyre",
  "twitch_chat_wrapper",
