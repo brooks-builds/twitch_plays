@@ -1,7 +1,6 @@
 use std::{env, io};
 use std::{sync::mpsc::channel, thread};
 
-use enigo::{Enigo, Key, KeyboardControllable};
 use eyre::{bail, Result};
 use twitch_plays::game_profiles::Games;
 use twitch_plays::MainState;
@@ -18,7 +17,7 @@ fn main() -> Result<()> {
     });
 
     let owner = env::var("OWNER")?;
-    let mut main_state = MainState::new(receive_from_twitch, game, owner);
+    let mut main_state = MainState::new(receive_from_twitch, game, owner, send_to_twitch);
     main_state.run();
 
     twitchchat.join().unwrap();
